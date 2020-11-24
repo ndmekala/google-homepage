@@ -1,19 +1,92 @@
 /* Forward slash asterisk to begin */
 /* Asterisk forward slash to end */
+body {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 14px;
+  min-width: 500px;
+  line-height: 25px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between safe;
+  height: 100vh;
+}
+
 a {
   text-decoration: none;
+  color: gray;
 }
 
 a:hover {
   text-decoration: underline;
+  color: gray;
 }
 
 img {
-  padding: 50px;
+  width: auto;
 }
 
+/* FIVE CLASSES BELOW */
+/* NAV */
+/* SEARCH AREA */
+/* FOOTER */
+
 .search {
-  padding-top: 100px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
 }
 /* Find a way to make logo shrink the window gets short enough */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.navbar-left {
+  display: flex;
+  width: 25vw;
+}
+
+.navbar-right {
+  display: flex;
+  justify-content: flex-end;
+  width: 25vw;
+}
+
+.navbar-links {
+  padding: 0px 20px 0px 20px;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  height: 50px;
+  border-top: 1px solid gray;
+}
+/* This needs to stack when window get narrow enough */
+/* which means its height needs to change when it gets narrow enough */
+
+.footer-left {
+  display: flex;
+  width: 25vw;
+  }
+
+.footer-right {
+  display: flex;
+  justify-content: flex-end;
+  width: 25vw;
+  }
+
+.footer-links {
+  padding: 0px 20px 0px 20px;
+}
