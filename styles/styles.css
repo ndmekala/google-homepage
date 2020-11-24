@@ -1,5 +1,19 @@
 /* Forward slash asterisk to begin */
 /* Asterisk forward slash to end */
+a {
+  text-decoration: none;
+}
+
 a:hover {
   text-decoration: underline;
 }
+
+img {
+  padding: 50px;
+}
+
+.search {
+  padding-top: 100px;
+  text-align: center;
+}
+/* Find a way to make logo shrink the window gets short enough */
