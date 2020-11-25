@@ -10,7 +10,6 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between safe;
   height: 100vh;
 }
 
@@ -28,19 +27,8 @@ img {
   width: auto;
 }
 
-/* FIVE CLASSES BELOW */
+/* THREE MAIN AREAS W SUBAREAS */
 /* NAV */
-/* SEARCH AREA */
-/* FOOTER */
-
-.search {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  height: 100%;
-}
-/* Find a way to make logo shrink the window gets short enough */
 
 .navbar {
   display: flex;
@@ -62,6 +50,19 @@ img {
 .navbar-links {
   padding: 0px 20px 0px 20px;
 }
+
+/* SEARCH AREA */
+
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+}
+/* Find a way to make logo shrink the window gets *short* enough */
+
+/* FOOTER */
 
 .footer {
   display: flex;
@@ -89,4 +90,6 @@ img {
 
 .footer-links {
   padding: 0px 20px 0px 20px;
+  /* min-width: 157px; */
 }
+/*This needs minimum width because we stackin*/
