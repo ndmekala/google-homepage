@@ -24,7 +24,15 @@ a:hover {
 }
 
 img {
+  padding-top: 100px;
   width: auto;
+}
+
+@media (max-height: 450px) {
+  img {
+    padding-top: 10px;
+    height: 55px;
+  }
 }
 
 /* THREE MAIN AREAS W SUBAREAS */
@@ -60,7 +68,8 @@ img {
   align-items: center;
   flex-grow: 1;
 }
-/* Find a way to make logo shrink the window gets *short* enough */
+
+/* Find a way to make logo shrink and pull towards top when the window gets *short* enough */
 
 /* FOOTER */
 
@@ -74,18 +83,17 @@ img {
   height: 50px;
   border-top: 1px solid gray;
 }
-/* This needs to stack when window get narrow enough */
-/* which means its height needs to change when it gets narrow enough */
 
 .footer-left {
   display: flex;
-  width: 25vw;
   }
+
+.footer-mid{
+}
 
 .footer-right {
   display: flex;
   justify-content: flex-end;
-  width: 25vw;
   }
 
 .footer-links {
@@ -93,3 +101,31 @@ img {
   /* min-width: 157px; */
 }
 /*This needs minimum width because we stackin*/
+
+@media (max-width: 805px) {
+  .footer {
+    justify-content: center;
+    height: 105px;
+  }
+
+  .footer-left {
+    width: 100%;
+    justify-content: center;
+    order: 2;
+    }
+
+  .footer-mid{
+    width: 100%;
+    text-align: center;
+    order: 1;
+  }
+
+  .footer-right {
+    width: 100%;
+    justify-content: center;
+    order: 3;
+    }
+}
+/* This needs to stack when window get narrow enough */
+/* which means its height needs to change when it gets narrow enough (media query) */
+/* Idea: extend this media query into affecting all sorts of footer styles etc. Like set width =100% or something*/
