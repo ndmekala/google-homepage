@@ -26,6 +26,7 @@ a:hover {
 img {
   padding-top: 100px;
   width: auto;
+  transition: 1s;
 }
 
 @media (max-height: 450px) {
@@ -89,6 +90,8 @@ img {
   }
 
 .footer-mid{
+  display: flex;
+  justify-content: center;
 }
 
 .footer-right {
